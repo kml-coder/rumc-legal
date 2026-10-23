@@ -17,6 +17,7 @@
 </main>
 <script>
 var id = new URLSearchParams(location.search).get('id');
-if (id && /^[0-9a-f-]{36}$/i.test(id)) document.getElementById('open').href = 'rumc://p/' + id;
+// Links shared from build 11 point here; posts now live on rumc-share.vercel.app.
+if (id && /^[0-9a-f-]{36}$/i.test(id)) location.replace('https://rumc-share.vercel.app/p/' + id);
 </script>
 </body></html>
